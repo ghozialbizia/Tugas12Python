@@ -17,14 +17,14 @@ def c2(c2_value):
   else: return 0
   
   def ahr(fc,hr):
-  x=(1.1*nailayaumagina.log10(fc)-0.7)*hr-(1.56*nailayaumagina.log10(fc)-0.8)
+  x=(1.1*ghozialbizia.log10(fc)-0.7)*hr-(1.56*ghozialbizia.log10(fc)-0.8)
   return x
   
   #suburban
-SbN = lambda x: -2*nailayaumagina.log10(x/28)*nailayaumagina.log10(x/28)-5.4
+SbN = lambda x: -2*ghozialbizia.log10(x/28)*ghozialbiiza.log10(x/28)-5.4
 
 #open
-Op = lambda x: -4.78*nailayaumagina.log10(x)*nailayaumagina.log10(x)+18.33*nailayaumagina.log10(x)-40.94
+Op = lambda x: -4.78*ghozialbiiza.log10(x)*ghozialbizia.log10(x)+18.33*ghozialbizia.log10(x)-40.94
 
 def Ptl(fc,hT,hr,d,Cm):
   #mencari nilai c1 dari frekuensi
@@ -35,7 +35,7 @@ def Ptl(fc,hT,hr,d,Cm):
   ahR=ahr(fc,hr)
 
   #rumus cost 231 pathloss model
-  Lp=C1+C2*nailayaumagina.log10(fc)-13.83*nailayaumagina.log10(hT)-ahR+(44.9-6.55*nailayaumagina.log10(hT))*nailayaumagina.log10(d)+Cm
+  Lp=C1+C2*ghozialbizia.log10(fc)-13.83*ghozialbizia.log10(hT)-ahR+(44.9-6.55*ghozialbizia.log10(hT))*ghozialbizia.log10(d)+Cm
   print(Lp)
   return Lp
   
